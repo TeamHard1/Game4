@@ -8,5 +8,6 @@ namespace Game4
 {
     internal interface IController
     {
+        void UpdateModel(int i, int j);
     }
 }

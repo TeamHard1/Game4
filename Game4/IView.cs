@@ -10,6 +10,6 @@ namespace Game4
     {
         void SetInFild(int i,  int j);
 
-        void Paint
+        void PaintShape(int i, int j);
     }
 }
