@@ -28,13 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pole = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // pole
+            // 
+            this.pole.Location = new System.Drawing.Point(12, 12);
+            this.pole.Name = "pole";
+            this.pole.Size = new System.Drawing.Size(672, 426);
+            this.pole.TabIndex = 0;
+            this.pole.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(696, 450);
+            this.Controls.Add(this.pole);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel pole;
     }
 }
 
